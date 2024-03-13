@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo"><img src="imagenes/Logo.png" alt="Logo Alura"></p>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section id="sec-encriptar">
+            <div class="container">
+                <textarea id="text-area" class="text-area" type="text" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <button id="btn-pegar" class="btn-pegar">Pegar</button>
+                </div>
+                <p>⚠Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec-desencriptar">
+            <div class="container">
+                <textarea class="mensaje" id="copiarMensaje" type="text"
+                    placeholder="No se a encotrado texto  para mostrar"></textarea>
+                <div class="botones">
+                    <button id="copiar" class="btn-copiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container" id="pie">
+            <a href="https://www.linkedin.com/in/raul-soto-3780632ba/">Linkedin</a>
+            <a href="https://github.com/RaulSoto2005">github</a>
+            <a href="raulsoto2005@gmail.com"><p>&copy;Raul Soto 2024</p></a>
+        </div>
+    </footer>
+    <script src="app2.js"></script>
+
+</body>
+
+</html>
